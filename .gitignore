@@ -4,6 +4,6 @@ dist
 .sass-cache
 .idea
 app/bower_components
-MispelledKee.sublime-project
-MispelledKee.sublime-workspace
+MisspelledKee.sublime-project
+MisspelledKee.sublime-workspace
 test-results.xml
