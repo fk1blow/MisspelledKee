@@ -1,0 +1,9 @@
+node_modules
+dist
+.tmp
+.sass-cache
+.idea
+app/bower_components
+next-casino.sublime-project
+next-casino.sublime-workspace
+test-results.xml
