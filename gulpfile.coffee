@@ -2,7 +2,8 @@
 gulp       = require 'gulp'
 coffee     = require 'gulp-coffee'
 concat     = require 'gulp-concat'
-sass       = require 'gulp-ruby-sass'
+# sass       = require 'gulp-ruby-sass'
+sass       = require 'gulp-sass'
 prefix     = require 'gulp-autoprefixer'
 cssmin     = require 'gulp-cssmin'
 jade       = require 'gulp-jade'
@@ -16,21 +17,20 @@ $          = require('gulp-load-plugins')();
 
 # Wathc and Compile coffeescripts
 gulp.task 'coffee', ->
-  # gulp.src('app/scripts/**/*.coffee', { read: false })
-  gulp.src('app/scripts/test.coffee', { read: false })
+  gulp.src('app/scripts/**/*.coffee', { read: false })
+  # gulp.src('app/scripts/test.coffee', { read: false })
     # .pipe(coffee({ bare: true, sourceMap: true }))
-    .pipe browserify({ transform: ['coffeeify'], debug: true, extensions: ['.coffee'] })
+    .pipe browserify({ transform: ['coffeeify'], debug: true, extensions: [ '.coffee' ] })
     .pipe concat 'bundle.js'
-    .pipe gulp.dest './tmp/scripts'
+    .pipe gulp.dest '.tmp/scripts'
 
-# Create your CSS from Sass, Autoprexif it to target 99%
-#  of web browsers, minifies it.
-gulp.task 'css', ->
-  gulp.src 'app/css/index.sass'
-    .pipe sass()
-    .pipe prefix "> 1%"
-    .pipe cssmin keepSpecialComments: 0
-    .pipe gulp.dest 'tmp/styles'
+# Sass task....
+gulp.task 'sass', ->
+  gulp.src [ 'app/styles/**/*.scss' ]
+    .pipe sass { includePaths: [ 'scss' ] }
+    .pipe $.autoprefixer 'last 1 version'
+    .pipe gulp.dest '.tmp/styles'
+    .pipe $.size()
 
 # Create you HTML from Jade, Adds an additional step of
 #  minification for filters (like markdown) that are not
@@ -40,7 +40,7 @@ gulp.task 'html', ->
     # .pipe jade()
   gulp.src 'app/index.html'
     .pipe minifyHTML()
-    .pipe gulp.dest 'tmp/templates'
+    .pipe gulp.dest '.tmp/templates'
 
 # Minify your SVG.
 gulp.task 'svg', ->
@@ -51,30 +51,29 @@ gulp.task 'svg', ->
 # Copy the fonts using streams.
 gulp.task 'copy:fonts', ->
   gulp.src 'app/fonts/*'
-    .pipe gulp.dest 'tmp/fonts'
+    .pipe gulp.dest '.tmp/fonts'
 
 # Connect
 gulp.task 'connect', ->
   $.connect.server
-    root: ['app', 'tmp'],
+    root: ['app', '.tmp'],
     port: 9000,
     livereload: true
 
-# Watches the application's files and reloads the browser
+# Watch for changes inside application assets and run various tasks
+gulp.task 'watch', ->
+  gulp.watch 'app/scripts/**/*.coffee', [ 'coffee' ]
+  gulp.watch 'app/styles/index.scss', [ 'sass' ]
+
+# Watches the application's files and reload the browser
 gulp.task 'reload', ->
-    gulp.watch 'app/scripts/*.coffee', ['coffee']
-
-    # Watch for changes in `app` folder
     gulp.watch [
-        'app/**/*.html',
-        'app/styles/**/*.scss',
-        'app/scripts/**/*.coffee',
-        'app/images/**/*'
+      'app/**/*.html',
+      'app/styles/**/*.scss',
+      'app/scripts/**/*.coffee',
+      'app/images/**/*'
     ], (event) ->
-        return gulp.src event.path
-            .pipe $.connect.reload()
+      gulp.src(event.path)
+        .pipe $.connect.reload()
 
-# Default task call every tasks created so far.
-# gulp.task 'default', ['css', 'html', 'svg', 'copy:fonts']
-
-gulp.task 'develop', ['connect', 'reload', 'coffee', 'html', ]
+gulp.task 'develop', [ 'connect', 'reload', 'watch' ]
