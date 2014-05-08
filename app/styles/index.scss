@@ -1,9 +1,13 @@
 // @import "../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss";
 
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
 
 body {
     padding-top: 50px;
     overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    // background-color: #202438;
 }
 #wrapper {
     min-height: 100%;
@@ -38,46 +42,216 @@ body {
   }
 }
 
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 
 /*===============================
   main
 ===============================*/
 
 #main-wrapper {
-  width: 95.66666667%;
-    /*height: 100%;*/
-    overflow-y: auto;
+  // width: 95.66666667%;
+  width: 100%;
+  position: absolute;
+  left: 60px;
+  padding-right: 60px;
+  /*height: 100%;*/
+  overflow-y: auto;
     /*padding: 50px 0 0px 0;*/
 }
 #main {
     position: relative;
     height: 100%;
     overflow-y: auto;
-    padding: 0 15px;
+    // padding: 0 15px;
 }
-
 
 /*===============================
   sidebar
 ===============================*/
 
 #sidebar-wrapper {
-    height: 100%;
-    width: 5.33333333%;
-    /*padding: 50px 0 0px 0;*/
-    background-color: yellow;
-    border-right:1px solid #d2d2d2;
+  height: 100%;
+  // width: 5.33333333%;
+  width: 60px;
+  /*padding: 50px 0 0px 0;*/
+  // background-color: #233445;
+  background-color: #403C68;
+  // border-right:1px solid #d2d2d2;
+  padding: 0;
+  position: fixed;
+}
+#sidebar-wrapper {
+  position: relative;
+  overflow-y: auto;
+
+  a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: inherit;
+    color: #ECAFB4;
+    &:hover {
+      // color: #a15a69;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    .badge {
+      position:absolute;
+      z-index: 1;
+      padding: 0;
+      background: none;
+    }
+  }
+}
+
+/*===============================
+  sections
+===============================*/
+
+#sections {
+  // padding-top: 30px;
+
+  li:first-child {
+    padding-top: 15px;
+  }
+
+  i {
+    font-size: 2em;
+  }
+
+  a {
+    line-height: 60px;
+    &:hover {
+      color: #fc939c;
+    }
+  }
+}
+
+/*===============================
+  groups
+===============================*/
+
+#groups {
+  padding-top:15px;
+
+  li {
+    transition: opacity .15s ease-in-out;
+    opacity: 0.35;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .active-group {
+    transition: background-color .75s ease-in-out;
+    // transition: color .35s ease-in-out;
+  }
+  .active-group:hover {
+    background-color: #ECAFB4;
+    color: #fff;
+  }
+
+  button {
+    line-height: 60px;
+    // padding: 17px 0;
     padding: 0;
-    position: fixed;
+    background: transparent;
+    border: none;
+    font-size: 1.1555em;
+  }
+
+  a {
+    line-height: 60px;
+    display:inline-block;
+    color: #fdf;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  li {
+    a {
+      opacity: 0.4;
+    }
+    a:hover {
+      opacity: 1;
+      color: #fff;
+    }
+  }
+
+  li.active-group,  {
+    opacity: 1;
+    color: #fff;
+  }
+
+  .group-h {
+    background-color: rgb(52, 179, 133);
+  }
+  .group-t {
+    background-color: #CEAC41;
+  }
+  .group-r {
+    background-color: #694BC9;
+  }
+  .group-d {
+    background-color: rgb(190, 88, 88);
+  }
+  .group-p {
+    background-color: #4C95E4;
+  }
+  .group-f {
+    background-color: #A57F5D;
+  }
+  .group-g {
+    background-color: #A1D3C5;
+  }
 }
-#sidebar-wrapper nav {
-    position: relative;
-    height: 100%;
-    overflow-y: auto;
+
+
+/*===============================
+  User section
+===============================*/
+
+#user-section {
+  float:right;
+  width: 20%;
+  height: 60px;
+  padding: 0 0 0 15px;
+  background-color: #403C68;
+  color: #fff;
+
+  p {
+    line-height: 60px;
+    // padding: 10px 0 10px 0;
+    // line-height: 30px;
+    font-size: 1.3em;
+    // float: left;
+    // line-height: 100%;
+    // display: inline;
+    // vertical-align: bottom;
+  }
+
+  #avatar {
+    float:right;
+    // position: relative;
+    // bottom: 0;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
 }
-#sidebar .list-group-item {
-        border-radius: 0;
-        border-left: 0;
-        border-right: 0;
-        border-top: 0;
-}
+
+
+
+
+
+

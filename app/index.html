@@ -15,11 +15,11 @@
         <!-- build:css styles/vendor.css -->
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="/bower_components/bootstrap-flat/css/bootstrap-flat.min.css">
-        <link rel="stylesheet" href="/bower_components/bootstrap-flat/css/bootstrap-flat-extras.css">
+        <link rel="stylesheet" href="/bower_components/bootstrap-flat/css/bootstrap-flat-extras.min.css">
+        <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.min.css">
         <!-- bower:css -->
 
         <!-- build:css styles/main.css -->
-        <!-- <link rel="stylesheet" href="styles/main.css"> -->
         <link rel="stylesheet" href="styles/index.css">
         <!-- endbuild -->
 
@@ -34,16 +34,67 @@
 
         <div id="wrapper">
           <section id="sidebar-wrapper" class="col-md-1">
-            <nav id="sidebar">
+            <nav id="sections">
               <ul>
-                <li><a href="#">R</a></li>
-                <li><a href="#">T</a></li>
-                <li><a href="#">D</a></li>
+                <li><a href="#"><i class="fa fa-search fa-fw"></i></a></li>
+                <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i></a></li> -->
+                <li><a href="#"><i class="fa fa-home fa-fw"></i></a></li>
+                <li><a href="#"><i class="fa fa-bars fa-fw"></i></a></li>
+              </ul>
+            </nav>
+
+            <nav id="groups">
+              <ul>
+                <li class="group-h">
+                  <!-- <a class="group-h" href="#">H</a> -->
+                  <button type="button" class="btn btn-primary btn-lg btn-block">hell</button>
+                </li>
+                <li class="group-t">
+                  <!-- <span class="badge pull-left">42</span> -->
+                  <!-- <a class="group-t" href="#">T</a> -->
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Tek no</button>
+                </li>
+                <li class="group-r">
+                  <!-- <a class="group-r" href="#">R</a> -->
+                  <button type="button" class="btn btn-primary btn-lg btn-block">R</button>
+                </li>
+                <li class="active-group group-d">
+                  <!-- <a class="group-d" href="#">D</a> -->
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Dd</button>
+                </li>
+                <li class="group-p">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">PRPP</button>
+                </li>
+                <li class="group-g">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Ffound</button>
+                </li>
+                <li class="group-d">
+                  <!-- <a class="group-d" href="#">D</a> -->
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Okeku</button>
+                </li>
+                <li class="group-f">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">gg</button>
+                </li>
+                <li class="group-r">
+                  <!-- <a class="group-r" href="#">R</a> -->
+                  <button type="button" class="btn btn-primary btn-lg btn-block">K</button>
+                </li>
+
+                <li class="group-p">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Kk</button>
+                </li>
               </ul>
             </nav>
           </section>
 
-          <section id="main-wrapper" class="col-md-11 pull-right">
+          <main id="main-wrapper" class="col-md-11 pull-right">
+            <header class="clearfix">
+              <section id="user-section" class="clearfix">
+                <div id="avatar"><a href="#"><img src="images/avatar.jpeg"></a></div>
+                <p>Welcome, Gizas Kraist!</p>
+              </section>
+            </header>
+
             <div id="main">
                 <div class="col-lg-6">
                     <h4>HTML5 Boilerplate</h4>
@@ -59,16 +110,7 @@
 
                 </div>
             </div>
-
-            <footer>
-              <ul class="nav nav-pills pull-right">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-              <h3 class="text-muted">MisspelledKee</h3>
-            </footer>
-          </section>
+          </main>
         </div>
 
         <!-- build:js scripts/vendor.js -->
