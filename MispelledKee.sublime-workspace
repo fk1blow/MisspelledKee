@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"templates"
+			],
+			[
 				"brow",
 				"browserify"
 			],
@@ -123,37 +127,17 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 2978,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "gulpfile.coffee",
-			"settings":
-			{
-				"buffer_size": 2199,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/scripts/index.coffee",
-			"settings":
-			{
-				"buffer_size": 331,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 52.0,
+		"height": 294.0,
 		"selected_items":
 		[
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -212,13 +196,48 @@
 	},
 	"file_history":
 	[
-		"/Users/Dragos/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/Dragos/Playground/MisspelledKee/gulpfile.js",
+		"/Users/Dragos/Playground/MisspelledKee/app/index.html",
+		"/Users/Dragos/Playground/MisspelledKee/app/styles/main.css",
 		"/Users/Dragos/Playground/MisspelledKee/gulpfile.coffee",
+		"/Users/Dragos/Playground/MisspelledKee/gulpfile.js",
 		"/Users/Dragos/Playground/MisspelledKee/_gulpfile.js",
+		"/Users/Dragos/Playground/MisspelledKee/app/bower_components/bootstrap-flat/css/bootstrap-flat.css",
+		"/Users/Dragos/Playground/MisspelledKee/app/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/Users/Dragos/Playground/MisspelledKee/app/bower_components/angularjs/src/js/bootstrap.js",
+		"/Users/Dragos/Playground/MisspelledKee/app/bower_components/angularjs/src/css/bootstrap.css",
+		"/Users/Dragos/Playground/MisspelledKee/app/bower_components/bootstrap/less/bootstrap.less",
+		"/Users/Dragos/Playground/MisspelledKee/bower.json",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-browserify/node_modules/browserify/node_modules/.bin/browser-pack",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-less/node_modules/less/test/browser/runner-production-options.js",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-less/node_modules/less/test/browser/runner-postProcessor-options.js",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-uglify/node_modules/uglify-js/lib/mozilla-ast.js",
+		"/Users/Dragos/Playground/MisspelledKee/MispelledKee.sublime-project",
+		"/Users/Dragos/Playground/MisspelledKee/app/scripts/test.coffee",
+		"/Users/Dragos/Playground/MisspelledKee/app/scripts/copy copy.coffee",
+		"/Users/Dragos/Playground/MisspelledKee/app/scripts/copy.coffee",
+		"/Users/Dragos/Sites/nextcasino/app/index.html",
+		"/Users/Dragos/Sites/nextcasino/bower.json",
+		"/Users/Dragos/Sites/nextcasino/Gruntfile.js",
+		"/Users/Dragos/Sites/nextcasino/app/styles/main.scss",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-browserify/test/fixtures/trans_error.coffee",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-load-plugins/tags",
+		"/Users/Dragos/Playground/MisspelledKee/app/bower_components/modernizr/feature-detects/css-objectfit.js",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/.bin/cake",
+		"/Users/Dragos/Playground/MisspelledKee/app/scripts/test copy.coffee",
+		"/Users/Dragos/Playground/MisspelledKee/app/scripts/index.coffee",
+		"/Users/Dragos/Playground/MisspelledKee/test/index.html",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-util/lib/isNull.js",
+		"/Users/Dragos/Playground/MisspelledKee/.tmp/scripts/bundle.js",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-less/node_modules/less/test/browser/test-runner-template.tmpl",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/coffeeify/.travis.yml",
+		"/Users/Dragos/Playground/MisspelledKee/.bowerrc",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/coffee/node_modules/modular-amd/vendor/mocha/editors/JavaScript mocha.tmbundle/info.plist",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/coffee/node_modules/modular-amd/vendor/mocha/editors/JavaScript mocha.tmbundle/Snippets/bdd - after each.tmSnippet",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/coffeeify/test/bundle.js",
+		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-cache/node_modules/lodash-node/compat/internals/baseUniq.js",
+		"/Users/Dragos/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Dragos/Library/Application Support/Sublime Text 3/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
 		"/Users/Dragos/Sites/nextcasino/app/scripts/decorators/state.coffee",
-		"/Users/Dragos/Sites/nextcasino/app/index.html",
 		"/Users/Dragos/Sites/nextcasino/app/img/icon-newest.svg",
 		"/Users/Dragos/Sites/nextcasino/app/scripts/modules/em-modal/views/modal.html",
 		"/Users/Dragos/Sites/nextcasino/app/scripts/module.coffee",
@@ -262,14 +281,9 @@
 		"/Users/Dragos/Playground/MisspelledKee/app/scripts/main.js",
 		"/Users/Dragos/Playground/MisspelledKee/app/bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tab.js",
 		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-browserify/node_modules/browserify/test/tr_args.js",
-		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-load-plugins/tags",
-		"/Users/Dragos/Playground/MisspelledKee/test/index.html",
-		"/Users/Dragos/Playground/MisspelledKee/app/index.html",
-		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp-util/lib/isNull.js",
 		"/Users/Dragos/Playground/MisspelledKee/x2_gulpfile.js",
 		"/Users/Dragos/Playground/MisspelledKee/x1_gulpfile.js",
 		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp/completion/zsh",
-		"/Users/Dragos/Playground/MisspelledKee/app/scripts/index.coffee",
 		"/Users/Dragos/Playground/MisspelledKee/app/scripts/index.js",
 		"/Users/Dragos/Playground/MisspelledKee/package.json",
 		"/Users/Dragos/Playground/MisspelledKee/node_modules/gulp/package.json",
@@ -309,37 +323,7 @@
 		"/Users/dragos/Sites/next-casino/node_modules/coffeeify/node_modules/coffee-script/register.js",
 		"/Users/dragos/Sites/next-casino/node_modules/grunt-svgmin/node_modules/svgo/plugins/removeEditorsNSData.js",
 		"/Users/dragos/Sites/next-casino/app/robots.txt",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-google-cdn/node_modules/bower/node_modules/request/tests/test-headers.js",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-karma/TODO.md",
-		"/Users/dragos/Sites/next-casino/app/scripts/controllers/main.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-account/main.coffee",
-		"/Users/dragos/Sites/next-casino/test/spec/controllers/main.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/module.coffee",
-		"/Users/dragos/Sites/next-casino/app/index.html",
-		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-user/main.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/services/session.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/services/sessionUserMixin.coffee",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-contrib-imagemin/node_modules/gifsicle/node_modules/bin-wrapper/node_modules/mout/lang/isNull.js",
-		"/Users/dragos/Sites/next-casino/app/bower_components/angular/angular-csp.css",
-		"/Users/dragos/Sites/next-casino/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json",
-		"/Users/dragos/Sites/next-casino/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/test/fixtures/test.conf",
-		"/Users/dragos/Sites/next-casino/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/components/component-bind/component.json",
-		"/Users/dragos/Sites/next-casino/node_modules/browserify/node_modules/browser-resolve/node_modules/resolve/test/resolver/incorrect_main/index.js",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-contrib-cssmin/node_modules/clean-css/bin/cleancss",
-		"/Users/dragos/Sites/next-casino/node_modules/karma/node_modules/.bin/coffee",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-google-cdn/node_modules/bower/node_modules/read-package-json/node_modules/npmlog/node_modules/ansi/color-spaces.pl",
-		"/Users/dragos/Sites/next-casino/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-six/component.json",
-		"/Users/dragos/Sites/next-casino/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-six/ChangeLog",
-		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-user/services/account.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-nav/em-nav.coffee",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-contrib-watch/docs/watch-examples.md",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt/node_modules/.bin/which",
-		"/Users/dragos/Sites/next-casino/app/scripts/services/webClient.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/services/webClientService.coffee",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-contrib-watch/node_modules/gaze/test/fixtures/nested/three.js",
-		"/Users/dragos/Sites/next-casino/node_modules/karma/node_modules/http-proxy/test/core/simple/test-http-response-close.js",
-		"/Users/dragos/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/dragos/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+		"/Users/dragos/Sites/next-casino/node_modules/grunt-google-cdn/node_modules/bower/node_modules/request/tests/test-headers.js"
 	],
 	"find":
 	{
@@ -357,6 +341,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"icon",
+			"color-bodyBackground",
+			".tmp",
+			"connect",
+			"_prelude",
+			"build",
+			"livere",
+			"base",
+			".base",
+			".tmp",
+			"base",
+			"build",
+			"watchify",
+			"htmlmin",
+			"sass",
+			"yeoman.app",
+			".app",
+			"app",
+			".tmp",
+			"css",
+			"scss",
 			"spaces",
 			"auth",
 			"$state",
@@ -463,28 +468,7 @@
 			"browser",
 			"browserify",
 			"brow\\",
-			"brow",
-			"css",
-			"color",
-			"coilor",
-			"theme",
-			"categories",
-			"cexSidebarNavigationCtrl",
-			"cexs",
-			".tmp",
-			"connect",
-			"rev",
-			"clean",
-			"server",
-			"neu",
-			"loadNpm",
-			"neuter",
-			".tmp",
-			"build",
-			"src:",
-			"neuter",
-			"console",
-			"subitem-title"
+			"brow"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -503,94 +487,13 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2978,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2687,
-								2687
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 654.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "gulpfile.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2199,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1326,
-								1326
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 4
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/scripts/index.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 331,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								331,
-								331
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -611,11 +514,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.453287760417,
 			1.0
 		],
 		"rows":
@@ -645,12 +555,36 @@
 		"selected_items":
 		[
 			[
-				"gulpfil",
+				"gulp",
 				"gulpfile.coffee"
 			],
 			[
+				"bootstrap-f",
+				"app/bower_components/bootstrap-flat/css/bootstrap-flat.css"
+			],
+			[
+				"main",
+				"app/styles/main.css"
+			],
+			[
+				"cop",
+				"app/scripts/copy copy.coffee"
+			],
+			[
+				"tes",
+				"app/scripts/test.coffee"
+			],
+			[
 				"index",
-				"app/index.html"
+				"app/scripts/index.coffee"
+			],
+			[
+				"bo",
+				"bower.json"
+			],
+			[
+				"gulpfil",
+				"gulpfile.coffee"
 			],
 			[
 				"modaldire",
@@ -703,10 +637,6 @@
 			[
 				"x2",
 				"x2_gulpfile.js"
-			],
-			[
-				"gulp",
-				"_gulpfile.js"
 			],
 			[
 				"gul",
@@ -813,10 +743,6 @@
 				"app/scripts/modules/em-nav/em-nav.coffee"
 			],
 			[
-				"main",
-				"app/scripts/controllers/main.coffee"
-			],
-			[
 				"grunt",
 				"Gruntfile.js"
 			],
@@ -831,10 +757,6 @@
 			[
 				"packa",
 				"package.json"
-			],
-			[
-				"bo",
-				"bower.json"
 			],
 			[
 				"component.co",
