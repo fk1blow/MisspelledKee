@@ -17,8 +17,8 @@ $          = require('gulp-load-plugins')();
 
 # Wathc and Compile coffeescripts
 gulp.task 'coffee', ->
-  gulp.src('app/scripts/**/*.coffee', { read: false })
-  # gulp.src('app/scripts/test.coffee', { read: false })
+  # gulp.src('app/scripts/**/*.coffee', { read: false })
+  gulp.src('app/scripts/app.coffee', { read: false })
     # .pipe(coffee({ bare: true, sourceMap: true }))
     .pipe browserify({ transform: ['coffeeify'], debug: true, extensions: [ '.coffee' ] })
     .pipe concat 'bundle.js'
@@ -61,6 +61,7 @@ gulp.task 'connect', ->
     livereload: true
 
 # Watch for changes inside application assets and run various tasks
+# @todo (dragos) add multiple watchers for html, img, svg, etc, etc
 gulp.task 'watch', ->
   gulp.watch 'app/scripts/**/*.coffee', [ 'coffee' ]
   gulp.watch 'app/styles/index.scss', [ 'sass' ]
@@ -68,7 +69,7 @@ gulp.task 'watch', ->
 # Watches the application's files and reload the browser
 gulp.task 'reload', ->
     gulp.watch [
-      'app/**/*.html',
+      'app/index.html',
       'app/styles/**/*.scss',
       'app/scripts/**/*.coffee',
       'app/images/**/*'
@@ -76,4 +77,5 @@ gulp.task 'reload', ->
       gulp.src(event.path)
         .pipe $.connect.reload()
 
-gulp.task 'develop', [ 'connect', 'reload', 'watch' ]
+# Develop task
+gulp.task 'develop', [ 'connect', 'reload', 'watch', 'sass', 'coffee' ]
