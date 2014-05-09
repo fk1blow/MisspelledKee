@@ -2,7 +2,6 @@
 gulp       = require 'gulp'
 coffee     = require 'gulp-coffee'
 concat     = require 'gulp-concat'
-# sass       = require 'gulp-ruby-sass'
 sass       = require 'gulp-sass'
 prefix     = require 'gulp-autoprefixer'
 cssmin     = require 'gulp-cssmin'
@@ -15,11 +14,9 @@ livereload = require 'gulp-livereload'
 rename     = require 'gulp-rename'
 $          = require('gulp-load-plugins')();
 
-# Wathc and Compile coffeescripts
+# Watch and compile coffeescripts
 gulp.task 'coffee', ->
-  # gulp.src('app/scripts/**/*.coffee', { read: false })
   gulp.src('app/scripts/app.coffee', { read: false })
-    # .pipe(coffee({ bare: true, sourceMap: true }))
     .pipe browserify({ transform: ['coffeeify'], debug: true, extensions: [ '.coffee' ] })
     .pipe concat 'bundle.js'
     .pipe gulp.dest '.tmp/scripts'
@@ -28,7 +25,7 @@ gulp.task 'coffee', ->
 gulp.task 'sass', ->
   gulp.src [ 'app/styles/**/*.scss' ]
     .pipe sass { includePaths: [ 'scss' ] }
-    .pipe $.autoprefixer 'last 1 version'
+    # .pipe $.autoprefixer 'last 1 version' # doesn't seem work
     .pipe gulp.dest '.tmp/styles'
     .pipe $.size()
 
@@ -57,7 +54,7 @@ gulp.task 'copy:fonts', ->
 gulp.task 'connect', ->
   $.connect.server
     root: ['app', '.tmp'],
-    port: 9000,
+    port: 9001,
     livereload: true
 
 # Watch for changes inside application assets and run various tasks

@@ -1,4 +1,4 @@
-sidebar = angular.module 'eqx.sidebar.controllers.sidebar', []
+sidebar = angular.module 'ke.sidebar.controllers.sidebar', []
 
 sidebar.controller 'SidebarController', ->
     console.log 'i am the SidebarController'

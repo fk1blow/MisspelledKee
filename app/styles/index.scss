@@ -35,11 +35,11 @@ body {
     }
 }
 @media (max-width: 992px) {
-    #sidebar-wrapper {
-        position: static;
-        height:auto;
-        max-height: 300px;
-  }
+  //   #sidebar-wrapper {
+  //       position: static;
+  //       height:auto;
+  //       max-height: 300px;
+  // }
 }
 
 ul, ol {
@@ -144,7 +144,7 @@ h1 {
 
 #groups {
   padding-top:30px;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   li {
     transition: opacity .15s ease-in-out;
@@ -234,7 +234,7 @@ h1 {
 
 #user-section {
   float:right;
-  width: 23%;
+  width: 20%;
   height: 80px;
   padding: 0 0 0 15px;
   background-color: #403C68;

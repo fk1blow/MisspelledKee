@@ -1,7 +1,7 @@
 require './directives/sidebar-directive'
 require './controllers/sidebar-controller'
 
-angular.module 'eqx.sidebar', [
-    'eqx.sidebar.directives.sidebar'
-    'eqx.sidebar.controllers.sidebar'
+angular.module 'ke.sidebar', [
+    'ke.sidebar.directives.sidebar'
+    'ke.sidebar.controllers.sidebar'
 ]

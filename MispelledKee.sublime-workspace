@@ -127,13 +127,37 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/styles/index.scss",
+			"settings":
+			{
+				"buffer_size": 4954,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 6858,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 294.0,
+		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"scss",
 				"Set Syntax: CSS"
@@ -167,15 +191,11 @@
 				"Preferences: Key Bindings - Default"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"coffeescrip",
 				"Set Syntax: CoffeeScript"
 			]
 		],
-		"width": 538.0
+		"width": 457.0
 	},
 	"console":
 	{
@@ -196,6 +216,8 @@
 	},
 	"file_history":
 	[
+		"/Users/dragos/Playground/MisspelledKee/node_modules/gulp-util/lib/isNull.js",
+		"/Users/dragos/Playground/MisspelledKee/app/index.html",
 		"/Users/Dragos/Playground/MisspelledKee/app/index.html",
 		"/Users/Dragos/Playground/MisspelledKee/app/styles/main.css",
 		"/Users/Dragos/Playground/MisspelledKee/gulpfile.coffee",
@@ -321,9 +343,7 @@
 		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-user/services/user.coffee",
 		"/Users/dragos/Sites/next-casino/app/views/pages/register.html",
 		"/Users/dragos/Sites/next-casino/node_modules/coffeeify/node_modules/coffee-script/register.js",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-svgmin/node_modules/svgo/plugins/removeEditorsNSData.js",
-		"/Users/dragos/Sites/next-casino/app/robots.txt",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-google-cdn/node_modules/bower/node_modules/request/tests/test-headers.js"
+		"/Users/dragos/Sites/next-casino/node_modules/grunt-svgmin/node_modules/svgo/plugins/removeEditorsNSData.js"
 	],
 	"find":
 	{
@@ -487,13 +507,71 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/styles/index.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4447,
+								4447
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4045.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 1,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5205,
+								5274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -555,6 +633,10 @@
 		"selected_items":
 		[
 			[
+				"index",
+				"app/index.html"
+			],
+			[
 				"gulp",
 				"gulpfile.coffee"
 			],
@@ -573,10 +655,6 @@
 			[
 				"tes",
 				"app/scripts/test.coffee"
-			],
-			[
-				"index",
-				"app/scripts/index.coffee"
 			],
 			[
 				"bo",
