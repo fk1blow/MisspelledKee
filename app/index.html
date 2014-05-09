@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" ng-app="MisspelledKee">
     <head>
         <meta charset="utf-8">
         <title>MisspelledKee</title>
@@ -33,13 +33,20 @@
         <![endif]-->
 
         <div id="wrapper">
-          <section id="sidebar-wrapper" class="col-md-1">
+          <section ng-controller="SidebarController"
+                   ng-mouseover="sidebarHovered=true"
+                   ng-mouseleave="sidebarHovered=false"
+                   id="sidebar-wrapper"
+                   class="col-md-1">
             <nav id="sections">
               <ul>
-                <li><a href="#"><i class="fa fa-search fa-fw"></i></a></li>
+                <li><a class="glyphicon glyphicon-search" href="#"></a></li>
+                <li><a class="glyphicon glyphicon-home" href="#"></a></li>
+                <li><a class="glyphicon glyphicon-th" href="#"></a></li>
+                <!-- <li><a href="#"><i class="fa fa-search fa-fw"></i></a></li> -->
                 <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i></a></li> -->
-                <li><a href="#"><i class="fa fa-home fa-fw"></i></a></li>
-                <li><a href="#"><i class="fa fa-bars fa-fw"></i></a></li>
+                <!-- <li><a href="#"><i class="fa fa-home fa-fw"></i></a></li> -->
+                <!-- <li><a href="#"><i class="fa fa-bars fa-fw"></i></a></li> -->
               </ul>
             </nav>
 
@@ -58,7 +65,7 @@
                   <!-- <a class="group-r" href="#">R</a> -->
                   <button type="button" class="btn btn-primary btn-lg btn-block">R</button>
                 </li>
-                <li class="active-group group-d">
+                <li class="group-d">
                   <!-- <a class="group-d" href="#">D</a> -->
                   <button type="button" class="btn btn-primary btn-lg btn-block">Dd</button>
                 </li>
@@ -75,7 +82,7 @@
                 <li class="group-f">
                   <button type="button" class="btn btn-primary btn-lg btn-block">gg</button>
                 </li>
-                <li class="group-r">
+                <li class="active-group group-r1">
                   <!-- <a class="group-r" href="#">R</a> -->
                   <button type="button" class="btn btn-primary btn-lg btn-block">K</button>
                 </li>
@@ -85,14 +92,22 @@
                 </li>
               </ul>
             </nav>
+
+            <!-- <section ng-class="{'active': sidebarHovered}" id="group-details"> -->
+            <section id="group-details">
+              <h2>K, there isn't one like it!{{sidebarHovered}}</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+            </section>
           </section>
 
           <main id="main-wrapper" class="col-md-11 pull-right">
-            <header class="clearfix">
+            <header id="header" class="clearfix">
               <section id="user-section" class="clearfix">
                 <div id="avatar"><a href="#"><img src="images/avatar.jpeg"></a></div>
-                <p>Welcome, Gizas Kraist!</p>
+                <p>Ce plm faci, <em>Dragose</em>?</p>
               </section>
+
+              <h1>Home groups</h1>
             </header>
 
             <div id="main">
@@ -116,9 +131,7 @@
         <!-- build:js scripts/vendor.js -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/angular/angular.js" type="text/javascript"></script>
-        <script src="bower_components/angular-sanitize/angular-sanitize.min.js" type="text/javascript"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.js" type="text/javascript"></script>
-        <script src="bower_components/angular-cookies/angular-cookies.min.js" type="text/javascript"></script>
         <script src="bower_components/angular-ui-utils/ui-utils.min.js" type="text/javascript"></script>
         <!-- endbuild -->
 

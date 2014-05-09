@@ -6,7 +6,7 @@
 body {
     padding-top: 50px;
     overflow: hidden;
-    font-family: 'Lato', sans-serif;
+    // font-family: 'Lato', sans-serif;
     // background-color: #202438;
 }
 #wrapper {
@@ -48,6 +48,11 @@ ul, ol {
   list-style-type: none;
 }
 
+h1 {
+  font-weight: 300;
+  font-size: 46px;
+}
+
 
 /*===============================
   main
@@ -76,6 +81,7 @@ ul, ol {
 
 #sidebar-wrapper {
   height: 100%;
+  // overflow: hidden;
   // width: 5.33333333%;
   width: 60px;
   /*padding: 50px 0 0px 0;*/
@@ -83,11 +89,9 @@ ul, ol {
   background-color: #403C68;
   // border-right:1px solid #d2d2d2;
   padding: 0;
-  position: fixed;
-}
-#sidebar-wrapper {
+  // position: fixed;
   position: relative;
-  overflow-y: auto;
+  // overflow-y: auto;
 
   a {
     display: inline-block;
@@ -122,8 +126,8 @@ ul, ol {
     padding-top: 15px;
   }
 
-  i {
-    font-size: 2em;
+  i, .glyphicon {
+    font-size: 1.8555em;
   }
 
   a {
@@ -139,25 +143,30 @@ ul, ol {
 ===============================*/
 
 #groups {
-  padding-top:15px;
+  padding-top:30px;
+  overflow-y: scroll;
 
   li {
     transition: opacity .15s ease-in-out;
-    opacity: 0.35;
+    opacity: 0.3;
 
     &:hover {
       opacity: 1;
     }
   }
 
-  .active-group {
-    transition: background-color .75s ease-in-out;
-    // transition: color .35s ease-in-out;
+  .active-group button {
+    // transition: color 1s ease-in;
+    // -webkit-transition:color .35s ease-in;
+    transition: all .2s ease-in-out;
+    // color: blue;
+
+    &:hover {
+      background-color: #403C68;
+      color: #ECAFB4;
+    }
   }
-  .active-group:hover {
-    background-color: #ECAFB4;
-    color: #fff;
-  }
+
 
   button {
     line-height: 60px;
@@ -201,6 +210,9 @@ ul, ol {
   .group-r {
     background-color: #694BC9;
   }
+  .group-r1 {
+    background-color: #A1BBCF;
+  }
   .group-d {
     background-color: rgb(190, 88, 88);
   }
@@ -222,17 +234,18 @@ ul, ol {
 
 #user-section {
   float:right;
-  width: 20%;
-  height: 60px;
+  width: 23%;
+  height: 80px;
   padding: 0 0 0 15px;
   background-color: #403C68;
   color: #fff;
 
   p {
-    line-height: 60px;
+    line-height: 80px;
     // padding: 10px 0 10px 0;
     // line-height: 30px;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    font-weight: 200;
     // float: left;
     // line-height: 100%;
     // display: inline;
@@ -244,13 +257,59 @@ ul, ol {
     // position: relative;
     // bottom: 0;
     img {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
     }
   }
 }
 
+#header {
+  padding-left: 15px;
+}
 
+
+/*===============================
+  Group details
+===============================*/
+
+#group-details {
+  width: 360px;
+  // width: 0px;
+  // visibility: hidden;
+  background-color: #2B2846;
+  height: 100%;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: -360px;
+  z-index: 2;
+  transition: all 0.08s ease-out;
+
+  p {
+    // padding: 15px;
+    font-weight: 200;
+    color: #ECAFB4;
+    // letter-spacing: 1px;
+    font-size: 1.15em;
+  }
+
+  h2 {
+    margin-top:0;
+    margin-bottom:25px;
+    // padding: 0 15px;
+    font-weight: 200;
+    // font-size: 32px;
+    color: #ECAFB4;
+  }
+}
+
+#group-details.active {
+  // transistion: all 1s ease-in;
+  // visibility: visible;
+  left: 60px;
+  // width: 360px;
+  z-index: 0;
+}
 
 
 

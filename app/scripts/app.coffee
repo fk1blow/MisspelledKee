@@ -1,7 +1,23 @@
-copy = require './copy.coffee'
-copy2 = require './copy\ copy.coffee'
+require './modules/sidebar/index'
 
-class FuckingClass2
+app = angular.module 'MisspelledKee', [
+    'eqx.sidebar'
+]
 
-console.log 'FuckingClass2'
-console.log 'FuckingClass2.xxx.sasd444'
+app.run ->
+    console.log 'app running...'
+
+
+
+
+
+
+
+
+# copy = require './copy.coffee'
+# copy2 = require './copy\ copy.coffee'
+
+# class FuckingClass2
+
+# console.log 'FuckingClass2'
+# console.log 'FuckingClass2.xxx.sasd444'
