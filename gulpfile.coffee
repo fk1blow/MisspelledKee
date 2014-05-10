@@ -12,22 +12,28 @@ coffeeify  = require 'coffeeify'
 browserify = require 'gulp-browserify'
 livereload = require 'gulp-livereload'
 rename     = require 'gulp-rename'
+gutil      = require 'gulp-util'
+plumber    = require 'gulp-plumber'
 $          = require('gulp-load-plugins')();
 
 # Watch and compile coffeescripts
 gulp.task 'coffee', ->
   gulp.src('app/scripts/app.coffee', { read: false })
+    .pipe(plumber())
     .pipe browserify({ transform: ['coffeeify'], debug: true, extensions: [ '.coffee' ] })
+    .on 'error', gutil.log
     .pipe concat 'bundle.js'
     .pipe gulp.dest '.tmp/scripts'
 
 # Sass task....
 gulp.task 'sass', ->
   gulp.src [ 'app/styles/**/*.scss' ]
+    .pipe(plumber())
     .pipe sass { includePaths: [ 'scss' ] }
+    .on 'error', gutil.log
     # .pipe $.autoprefixer 'last 1 version' # doesn't seem work
     .pipe gulp.dest '.tmp/styles'
-    .pipe $.size()
+    # .pipe $.size()
 
 # Create you HTML from Jade, Adds an additional step of
 #  minification for filters (like markdown) that are not
@@ -67,9 +73,14 @@ gulp.task 'watch', ->
 gulp.task 'reload', ->
     gulp.watch [
       'app/index.html',
+      'app/scripts/app.coffee',
+
       'app/styles/**/*.scss',
-      'app/scripts/**/*.coffee',
       'app/images/**/*'
+
+      'app/scripts/modules/**/*.coffee',
+      'app/scripts/modules/**/*.html',
+      'app/scripts/modules/**/*.scss',
     ], (event) ->
       gulp.src(event.path)
         .pipe $.connect.reload()
