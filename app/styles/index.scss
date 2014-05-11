@@ -1,12 +1,15 @@
 // @import "../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss";
 
-@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Lato:300italic,400italic,:600italic,700italic,:800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(../fonts/flat-icon/flaticon.css);
 
 
 body {
     padding-top: 50px;
     overflow: hidden;
     // font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     // background-color: #202438;
 }
 #wrapper {
@@ -49,9 +52,44 @@ ul, ol {
 }
 
 h1 {
-  font-weight: 300;
   font-size: 46px;
 }
+
+
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after
+{
+  font-family: Flaticon;
+  font-size: 2.5em;
+  font-style: normal;
+  color: inherit;
+}
+.glyph {
+  display: inline-block;
+  width: 120px;
+  margin: 10px;
+  text-align: center;
+  vertical-align: top;
+  background: #FFF;
+}
+.glyph .glyph-icon,
+.glyph-icon {
+  // padding: 10px;
+  display: block;
+  font-family:"Flaticon";
+  font-size: 64px;
+  line-height: 1;
+}
+.glyph .glyph-icon:before {
+  font-size: 64px;
+  color: #666;
+  margin-left: 0;
+}
+
+
 
 
 /*===============================
@@ -62,8 +100,8 @@ h1 {
   // width: 95.66666667%;
   width: 100%;
   position: absolute;
-  left: 60px;
-  padding-right: 60px;
+  left: 80px;
+  padding-right: 240px;
   /*height: 100%;*/
   overflow-y: auto;
     /*padding: 50px 0 0px 0;*/
@@ -83,27 +121,16 @@ h1 {
   height: 100%;
   // overflow: hidden;
   // width: 5.33333333%;
-  width: 60px;
+  width: 80px;
   /*padding: 50px 0 0px 0;*/
   // background-color: #233445;
-  background-color: #403C68;
+  // background-color: #403C68;
+  background-color: #241E14;
   // border-right:1px solid #d2d2d2;
   padding: 0;
   // position: fixed;
   position: relative;
   // overflow-y: auto;
-
-  a {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-size: inherit;
-    color: #ECAFB4;
-    &:hover {
-      // color: #a15a69;
-      text-decoration: none;
-    }
-  }
 
   nav {
     .badge {
@@ -119,8 +146,8 @@ h1 {
   sections
 ===============================*/
 
-#sections {
-  // padding-top: 30px;
+#app-sections {
+  // width: 80px;
 
   li:first-child {
     padding-top: 15px;
@@ -131,9 +158,16 @@ h1 {
   }
 
   a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: inherit;
+    color: #5FA894;
     line-height: 60px;
+    transition: all .1s ease-in-out;
     &:hover {
-      color: #fc939c;
+      color: #E7E7E7;
+      text-decoration: none;
     }
   }
 }
@@ -144,37 +178,64 @@ h1 {
 
 #groups {
   padding-top:30px;
+  width: 80px;
+  // max-height: 300px;
+  // overflow-y: scroll;
+  // overflow-x: inherit;
+  // padding-bottom: -300px;
+  // margin-bottom: 300px;
+  // overflow-x: scroll;
   // overflow-y: scroll;
 
-  li {
-    transition: opacity .15s ease-in-out;
-    opacity: 0.3;
+  // li {
+  //   transition: opacity .1s ease-in-out;
+  //   opacity: 0.25;
 
-    &:hover {
-      opacity: 1;
-    }
-  }
+  //   &:hover {
+  //     opacity: 1;
+  //   }
+  // }
 
   .active-group button {
     // transition: color 1s ease-in;
     // -webkit-transition:color .35s ease-in;
-    transition: all .2s ease-in-out;
+    transition: all .07s ease-in-out;
     // color: blue;
+    // border-left: 6px solid #fff;
 
     &:hover {
-      background-color: #403C68;
-      color: #ECAFB4;
+      // background-color: #403C68;
+      // color: #ECAFB4;
     }
   }
 
 
   button {
-    line-height: 60px;
+    line-height: 80px;
     // padding: 17px 0;
     padding: 0;
     background: transparent;
     border: none;
-    font-size: 1.1555em;
+    font-size: 0.9555em;
+    font-weight: 500;
+    outline: none;
+    transition: all .1s ease-in-out;
+    opacity: 0.25;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active,
+    &.active {
+      opacity: 1;
+      width: 150%;
+      // position:static;
+      z-index: 999;
+      // width: 120px;
+      // transform: translate(0px, px);
+      // transform: scaleX(4);
+    }
   }
 
   a {
@@ -186,43 +247,46 @@ h1 {
     }
   }
 
-  li {
-    a {
-      opacity: 0.4;
-    }
-    a:hover {
-      opacity: 1;
-      color: #fff;
-    }
-  }
-
-  li.active-group,  {
+  li.active-group button {
     opacity: 1;
     color: #fff;
   }
 
-  .group-h {
+  .group-h button {
     background-color: rgb(52, 179, 133);
   }
-  .group-t {
+  .group-t button {
     background-color: #CEAC41;
   }
-  .group-r {
+  .group-r button {
     background-color: #694BC9;
   }
-  .group-r1 {
+  .group-r1 button {
     background-color: #A1BBCF;
   }
-  .group-d {
+  .group-d button {
     background-color: rgb(190, 88, 88);
   }
-  .group-p {
+  .group-p button {
     background-color: #4C95E4;
   }
-  .group-f {
+  .group-f button {
     background-color: #A57F5D;
   }
-  .group-g {
+  .group-k button {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+  .group-g button {
+    background-color: #3D4946;
+  }
+  .group-s button {
+    background-color: #A1D3C5;
+  }
+  .group-z button {
+    background-color: #3D4946;
+  }
+  .group-s button {
     background-color: #A1D3C5;
   }
 }
@@ -237,7 +301,7 @@ h1 {
   width: 20%;
   height: 80px;
   padding: 0 0 0 15px;
-  background-color: #403C68;
+  background-color: #241E14;
   color: #fff;
 
   p {
@@ -306,11 +370,27 @@ h1 {
 #group-details.active {
   // transistion: all 1s ease-in;
   // visibility: visible;
-  left: 60px;
-  // width: 360px;
-  z-index: 0;
+  // left: 60px;
+  width: 660px;
+  // z-index: 0;
 }
 
 
 
-
+.sectioned {
+  position: absolute;
+  bottom: 0;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 0 0 5px 0;
+  text-align: center;
+  width: 80px;
+  // padding: 28px 0 0;
+  // line-height: 90px;
+  // padding: 30px 0;
+  font-style: italic;
+  text-align: center;
+  font-weight: 200;
+  // font-size: 0.94em;
+}

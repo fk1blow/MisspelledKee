@@ -1,0 +1,18 @@
+<ul>
+  <li class="group-{{group.groupid}}"
+      ng-repeat="group in groups"
+      ng-class="{'active-group': activeGroup == group.groupid }">
+
+    <button ng-click="selectGroup(group.groupid)"
+            class="btn btn-primary btn-lg btn-block"
+            type="button">
+
+      <!-- <img ng-if="group.avatarUrl"
+           src="{{group.avatarUrl}}"
+           style="display:none; width:80px; height: 80px;"> -->
+
+      {{group.name}}
+    </button>
+
+  </li>
+</ul>
