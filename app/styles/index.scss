@@ -63,7 +63,7 @@ h1 {
 [class*=" flaticon-"]:after
 {
   font-family: Flaticon;
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-style: normal;
   color: inherit;
 }
@@ -125,7 +125,7 @@ h1 {
   /*padding: 50px 0 0px 0;*/
   // background-color: #233445;
   // background-color: #403C68;
-  background-color: #241E14;
+  background-color: #283741;
   // border-right:1px solid #d2d2d2;
   padding: 0;
   // position: fixed;
@@ -162,11 +162,11 @@ h1 {
     width: 100%;
     text-align: center;
     font-size: inherit;
-    color: #5FA894;
+    color: #fff;
     line-height: 60px;
     transition: all .1s ease-in-out;
     &:hover {
-      color: #E7E7E7;
+      color: #5FA894;
       text-decoration: none;
     }
   }
@@ -283,10 +283,19 @@ h1 {
   .group-s button {
     background-color: #A1D3C5;
   }
-  .group-z button {
+  .group-q button {
     background-color: #3D4946;
   }
-  .group-s button {
+  .group-w button {
+    background-color: #757E7B;
+  }
+  .group-x button {
+    background-color: #A9E046;
+  }
+  .group-y button {
+    background-color: #3D4946;
+  }
+  .group-z button {
     background-color: #A1D3C5;
   }
 }
