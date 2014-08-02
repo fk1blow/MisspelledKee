@@ -20,7 +20,8 @@ $          = require('gulp-load-plugins')();
 gulp.task 'coffee', ->
   gulp.src('app/scripts/app.coffee', { read: false })
     .pipe(plumber())
-    .pipe browserify({ transform: ['coffeeify'], debug: true, extensions: [ '.coffee' ] })
+    .pipe browserify
+      transform: ['coffeeify'], debug: true, extensions: [ '.coffee' ]
     .on 'error', gutil.log
     .pipe concat 'bundle.js'
     .pipe gulp.dest '.tmp/scripts'

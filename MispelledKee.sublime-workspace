@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"text-",
+				"text-align"
+			],
+			[
 				"te",
 				"templates"
 			],
@@ -118,10 +122,6 @@
 			[
 				"cexMain",
 				"cexMainNav"
-			],
-			[
-				"text-",
-				"text-transform"
 			]
 		]
 	},
@@ -131,7 +131,7 @@
 			"file": "app/styles/index.scss",
 			"settings":
 			{
-				"buffer_size": 4954,
+				"buffer_size": 8069,
 				"line_ending": "Unix"
 			}
 		},
@@ -139,7 +139,7 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 6858,
+				"buffer_size": 5965,
 				"line_ending": "Unix"
 			}
 		}
@@ -147,16 +147,20 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 400.0,
+		"height": 118.0,
 		"selected_items":
 		[
 			[
-				"sass",
-				"Set Syntax: Sass"
+				"settings",
+				"Preferences: Settings - User"
 			],
 			[
 				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
 			],
 			[
 				"scss",
@@ -165,10 +169,6 @@
 			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"settings",
-				"Preferences: Settings - Default"
 			],
 			[
 				"settting",
@@ -216,6 +216,12 @@
 	},
 	"file_history":
 	[
+		"/Users/dragostudorache/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/dragostudorache/Playground/MisspelledKee/app/index.html",
+		"/Users/dragostudorache/Playground/MisspelledKee/node_modules/gulp-util/lib/isNull.js",
+		"/Users/dragostudorache/Playground/MisspelledKee/.sass-cache/0296b6803e8a742ca7616b76f109d537a5bc996c/index.scssc",
+		"/Users/dragostudorache/Playground/MisspelledKee/test/index.html",
+		"/Users/dragostudorache/Playground/MisspelledKee/app/styles/index.scss",
 		"/Users/dragos/Playground/MisspelledKee/node_modules/gulp-util/lib/isNull.js",
 		"/Users/dragos/Playground/MisspelledKee/app/index.html",
 		"/Users/Dragos/Playground/MisspelledKee/app/index.html",
@@ -337,13 +343,7 @@
 		"/Users/Dragos/Sites/nextcasino/.sass-cache/b38b3f6a485e890a4c06b125988005f9c34bbea1/style.scssc",
 		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-login-popup/em-login-popup.coffee",
 		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-three-step-register/em-three-step-register.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-account/services/account.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/app.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/services/webApi.coffee",
-		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-user/services/user.coffee",
-		"/Users/dragos/Sites/next-casino/app/views/pages/register.html",
-		"/Users/dragos/Sites/next-casino/node_modules/coffeeify/node_modules/coffee-script/register.js",
-		"/Users/dragos/Sites/next-casino/node_modules/grunt-svgmin/node_modules/svgo/plugins/removeEditorsNSData.js"
+		"/Users/dragos/Sites/next-casino/app/scripts/modules/em-account/services/account.coffee"
 	],
 	"find":
 	{
@@ -361,6 +361,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"text",
+			"sidebar-wrapper",
+			"#sidebar-wrapper",
+			"#sidebar-wrapper a",
+			"app-sections",
+			"-wrapper",
 			"icon",
 			"color-bodyBackground",
 			".tmp",
@@ -482,13 +488,7 @@
 			"categ",
 			"cate",
 			"cat",
-			"categories",
-			"cate",
-			"categoriesPro",
-			"browser",
-			"browserify",
-			"brow\\",
-			"brow"
+			"categories"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -516,26 +516,26 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4954,
+						"buffer_size": 8069,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4447,
-								4447
+								2535,
+								2535
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4045.0,
+						"translation.y": 1987.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -550,26 +550,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6858,
+						"buffer_size": 5965,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5205,
-								5274
+								2859,
+								2859
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 1140.0,
+						"translation.x": 21.0,
+						"translation.y": 516.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -632,6 +633,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"index.scss",
+				"app/styles/index.scss"
+			],
 			[
 				"index",
 				"app/index.html"
@@ -1029,7 +1034,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 251.0,
 	"status_bar_visible": true,
 	"template_settings":
