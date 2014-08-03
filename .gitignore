@@ -1,10 +1,11 @@
 node_modules
 dist
 vendor
+test
 .tmp
 .sass-cache
 .idea
-app/bower_components
+vendor/bower_components
 MisspelledKee.sublime-project
 MisspelledKee.sublime-workspace
 test-results.xml
