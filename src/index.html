@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" ng-app="MisspelledKee">
+<head>
+    <meta charset="utf-8">
+    <title>MisspelledKee</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="scripts/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="scripts/bower_components/bootstrap-flat/css/bootstrap-flat.min.css">
+    <link rel="stylesheet" href="scripts/bower_components/bootstrap-flat/css/bootstrap-flat-extras.min.css">
+    <link rel="stylesheet" href="scripts/bower_components/components-font-awesome/css/font-awesome.min.css">
+    <!-- bower:css -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="scripts/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+    <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+      <section ng-controller="SidebarCtrl"
+               id="sidebar-wrapper"
+               class="col-md-1">
+
+        <nav id="app-sections">
+          <ul>
+            <!-- <li><a class="glyphicon glyphicon-search" href="#"></a></li>
+            <li><a class="glyphicon glyphicon-home" href="#"></a></li>
+            <li><a class="glyphicon glyphicon-th" href="#"></a></li> -->
+            <li>
+              <a class="flaticon-dark33" href="#" title="Search MisspelledKee"></a>
+            </li>
+            <li><a class="flaticon-outline5" href="#" title="Yout Homepage Dashboard"></a></li>
+            <li><a class="flaticon-group25" href="#" title="Your Groups"></a></li>
+          </ul>
+        </nav>
+
+        <!-- @todo the GroupsCtrl is kind of reduntant in this instance -->
+        <!-- The SidebarCtrl is responsable of setting the data for the groups list -->
+        <!-- <nav id="groups"> -->
+          <!-- <ke-sidebar-groups></ke-sidebar-groups> -->
+
+        <!-- <nav id="groups">
+          <div ke-favorite-groups source="groups.list"></div>
+        </nav> -->
+
+        <!-- <section ng-class="{'active': sidebarHovered}" id="group-details"> -->
+        <!-- <section id="group-details">
+          <h2>K, there isn't one like it!{{sidebarHovered}}</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        </section> -->
+
+        <!-- <p class="sectioned">
+          v 0.34.5<br />
+          fast lane
+        </p> -->
+      </section>
+
+      <main id="main-wrapper" class="col-md-11 pull-right">
+        <header id="header" class="clearfix">
+          <section id="user-section" class="clearfix">
+            <div id="avatar"><a href="#"><img src="images/avatar.jpeg"></a></div>
+            <p>Ce plm faci, <em>Dragose</em>?</p>
+          </section>
+
+          <h1>Home groups</h1>
+        </header>
+
+        <div id="main">
+            <div class="col-lg-6">
+                <h4>HTML5 Boilerplate</h4>
+                <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+
+                <h4>Sass with Compass</h4>
+                <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
+
+                <h4>Bootstrap</h4>
+                <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+                <h4>Modernizr</h4>
+                <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+
+            </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="scripts/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/bower_components/angular/angular.js" type="text/javascript"></script>
+    <script src="scripts/bower_components/angular-ui-router/release/angular-ui-router.js" type="text/javascript"></script>
+    <script src="scripts/bower_components/angular-ui-utils/ui-utils.min.js" type="text/javascript"></script>
+    <script src="scripts/bower_components/lodash/dist/lodash.min.js" type="text/javascript"></script>
+
+    <script src="scripts/app/app-bundle.js"></script>
+</body>
+</html>
