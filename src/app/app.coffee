@@ -1,17 +1,19 @@
-require '../common/vpxSidebar/index'
-require '../common/vpxGroups/index'
+require './states/app_states'
 
-app = angular.module 'MisspelledKee', [
+app = angular.module 'misspelledkee', [
   'templates'
-  'ke.sidebar'
-  'ke.groups'
+
+  'misspelledkee.states'
+
+  'ui.router'
+  # 'ke.sidebar'
+  # 'ke.groups'
 ]
 
-app.constant 'MOCKS_URL', 'http://localhost:9001/mocks'
-
-app.directive 'vpxTestDirective', ->
-  restrict: 'E'
-  templateUrl: 'app/xmodule/xtemplate.html'
+app.config ($locationProvider, $urlRouterProvider) ->
+  $locationProvider.html5Mode true
+  # $urlRouterProvider.when('/', '/dashboard')
+  # $urlRouterProvider.when('/groups/:id', '/groups')
 
 app.run ->
   console.log 'app running...'
