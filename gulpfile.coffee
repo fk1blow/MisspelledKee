@@ -48,7 +48,7 @@ gulp.task 'usemin', ->
     .on 'error', gutil.log
     .pipe gulp.dest('./build')
 
-# watch and compile coffeescripts
+# lint, compile, transform coffeescripts
 gulp.task 'coffee', ->
   gulp.src('./src/app/app.coffee', { read: false })
     .pipe(plumber())
@@ -72,7 +72,7 @@ gulp.task 'sass', ->
     .on 'error', gutil.log
     .pipe gulp.dest './dist/styles'
 
-# watch for the index.html changes and reload server
+# takes the index and spits it out
 gulp.task 'index', ->
   gulp.src './src/index.html'
     .pipe minifyHTML()
@@ -104,11 +104,12 @@ gulp.task 'server', ->
   lrserver.listen(livereloadport)
 
 # watch for changes inside application assets and run various tasks
-gulp.task 'watch', ->
+gulp.task 'watchers', ->
   gulp.watch 'src/app/**/*.coffee', [ 'coffee' ] # states, controllers, app specific, mostly
   gulp.watch 'src/common/**/*.coffee', [ 'coffee' ] # standalone components, independt(kinda) of app
-  gulp.watch 'src/styles/index.scss', [ 'sass' ]
-  gulp.watch 'src/**/*.html', [ 'templates' ]
+  gulp.watch 'src/styles/**/*.scss', [ 'sass' ]
+  gulp.watch ['src/index.html',
+    'src/app/**/*.html', 'src/common/**/*.html'], [ 'templates' ]
 
 # copy every file from the dist, to the build,
 gulp.task 'copy-scripts', ['templates', 'coffee'], ->
@@ -119,16 +120,19 @@ gulp.task 'copy-scripts', ['templates', 'coffee'], ->
 # develop task
 gulp.task 'develop', [
   'server'
-  'watch'
+  'watchers'
   'templates'
   'coffee'
   'sass'
 ]
 
+# build the app
 gulp.task 'build', [
   'usemin'
-  'copy-scripts'
+  'templates'
+  'coffee'
   'sass'
   'svg'
   'fonts'
+  'copy-scripts'
 ]
