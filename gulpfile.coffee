@@ -40,8 +40,7 @@ server.use(express.static('dist/'))
 server.use(express.static('vendor/'))
 # html5 mode
 server.all '/*', (req, res, next) ->
-    # Just send the index.html for other files to support HTML5Mode
-    res.sendfile('./src/index.html', { root: __dirname })
+    res.sendFile('./src/index.html', { root: __dirname })
 
 # Replaces references to non-optimized scripts or stylesheets into a
 # set of HTML files (or any templates/views).

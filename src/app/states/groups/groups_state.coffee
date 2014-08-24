@@ -3,6 +3,6 @@ angular.module 'misspelledkee.states.groups', []
     $stateProvider
       .state 'groups',
         url: "/groups"
+        templateUrl: 'app/states/groups/templates/groups.html'
         controller: ->
           console.log 'accessing groups state'
-        # templateUrl: "partials/state1.html"
